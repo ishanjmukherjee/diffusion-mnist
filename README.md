@@ -25,3 +25,24 @@ Using a ~7x larger MLP than the convnet still outputs random noise:
 ![](/assets/chunkymlp_epoch_100.png)
 
 Picking a good inductive bias matters, huh.
+
+## How to run this
+
+Set up an environment:
+
+```bash
+conda create -n diffusion-mnist python=3.10
+conda activate diffusion-mnist
+pip install torch torchvision tqdm
+```
+
+Only `torch`, `torchvision`, and `tqdm` are dependencies. The latest versions
+should work since the code is basic, but for reproducibility: I worked with
+`torch==2.7.1`, `torchvision==0.22.1`, and `tqdm==4.67.1`.
+
+Then, just run the script. It handles dataset downloading, dataloading,
+training, sampling, checkpoint saving, etc.
+
+```bash
+python mnist_ddpm.py
+```
