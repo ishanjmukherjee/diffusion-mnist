@@ -1,5 +1,8 @@
 # Diffusion on MNIST
 
+(See also the companion blog post to this repo, called "[Diffusion models can be
+quite simple](https://ishanjmukherjee.github.io/simple-diffusion-models)".)
+
 This is a minimal implementation of image diffusion as described in the
 [DDPM](https://arxiv.org/abs/2006.11239)
 paper for unconditional generation of
